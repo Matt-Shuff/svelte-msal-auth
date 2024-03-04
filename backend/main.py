@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/', methods=['GET', 'POST'])
-def print_headers():
+def get_random():
     headers = request.headers
     print(request.headers["Authorization"])
 
